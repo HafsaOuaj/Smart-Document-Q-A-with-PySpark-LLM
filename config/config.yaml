@@ -1,0 +1,32 @@
+# config/config.yaml
+paths:
+  raw: data/raw
+  bronze: data/bronze
+  silver: data/silver
+  gold: data/gold
+  faiss_index: data/gold/faiss.index
+  embeddings_npz: data/gold/embeddings.npz
+  meta_parquet: data/gold/meta.parquet
+
+spark:
+  app_name: "LLM-Spark-RAG"
+  master: "local[*]"
+  partitions: 8
+
+chunking:
+  target_tokens: 500
+  overlap_tokens: 50
+
+embeddings:
+  provider: "openai"   # or "huggingface"
+  model: "text-embedding-3-large"  # e.g., OpenAI
+  batch_size: 64
+
+retrieval:
+  top_k: 5
+
+llm:
+  provider: "openai"      # or "huggingface"
+  model: "gpt-4o-mini"    # pick what you have access to
+  max_tokens: 400
+  temperature: 0.7
