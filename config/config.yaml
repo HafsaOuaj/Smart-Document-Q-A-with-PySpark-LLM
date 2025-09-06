@@ -14,12 +14,12 @@ spark:
   partitions: 8
 
 chunking:
-  target_tokens: 500
+  target_tokens: 300
   overlap_tokens: 50
 
 embeddings:
-  provider: "openai"   # or "huggingface"
-  model: "text-embedding-3-large"  # e.g., OpenAI
+  provider: "huggingface"   # or "huggingface"
+  model: "sentence-transformers/all-MiniLM-L6-v2"  # e.g., OpenAI
   batch_size: 64
 
 retrieval:
