@@ -1,0 +1,15 @@
+pyspark>=3.5.0
+numpy>=1.26.0
+pandas>=2.2.0
+pyyaml>=6.0.1
+nltk>=3.8.1
+langdetect>=1.0.9
+streamlit>=1.36.0
+
+# Choose one of the following depending on your use case:
+openai>=1.35.0
+huggingface-hub>=0.24.0
+
+sentence-transformers>=2.7.0
+faiss-cpu>=1.8.0
+pyarrow>=16.0.0
