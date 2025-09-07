@@ -13,3 +13,4 @@ huggingface-hub>=0.24.0
 sentence-transformers>=2.7.0
 faiss-cpu>=1.8.0
 pyarrow>=16.0.0
+chromadb
